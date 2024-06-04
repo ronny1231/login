@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/img/Recetas_que_despiertan_los_sentidos-removebg-preview.png" alt="Logotipo" id="logo">
+            <button id="menu-button">&#9776;</button>
+            <ul id="nav-menu">
+                <li><a href="https://ronny1231.github.io/principal/">Inicio</a></li>
+                <li><a href="https://ronny1231.github.io/login/">Iniciar Sesión</a></li>
+                <li><a href="https://ronny1231.github.io/register/">Registrarse</a></li>
+                <li><a href="https://ronny1231.github.io/about/">Quiénes Somos</a></li>
+                <li><a href="https://ronny1231.github.io/recetas/">Recetas</a></li>
+                <li><a href="https://ronny1231.github.io/calcul/">Calculadoras</a></li>
+                <li><a href="https://ronny1231.github.io/contact/">Contacto</a></li>
+                <li><a href="https://ronny1231.github.io/pregun/">FAQ</a></li>
+                <li><a href="https://ronny1231.github.io/chef/">Perfil del Chef</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form" onsubmit="validarInicioSesion(event)">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p>¿No tienes una cuenta? <a href="https://ronny1231.github.io/register/">Regístrate aquí</a></p>
+    </main>
+    <script src="auth.js"></script>
+</body>
+</html>
